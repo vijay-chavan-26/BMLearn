@@ -117,8 +117,8 @@ function sendAccountCreatedEmail($username, $email)
     $mail->SMTPAuth = true;
 
     $mail->Host = 'smtp.gmail.com';
-    $mail->Username = 'semvproject.ty@gmail.com';
-    $mail->Password = 'jfubynahtqeyhbsd';
+    $mail->Username = '';
+    $mail->Password = '';
 
     $mail->SMTPSecure = 'ssl'; //Enable implicit TLS encryption
     $mail->Port = 465;
