@@ -11,7 +11,7 @@ if(isset($_GET['subject_id'])){
                     subject.subject
                     from video INNER JOIN
                     subject ON video.subject_id = subject.id
-                    WHERE video.subject_id = 1";
+                    WHERE video.subject_id = $subjectId";
     $select_query_run = mysqli_query($conn, $select_query);
 }else{
     header("Location: subject.php");
